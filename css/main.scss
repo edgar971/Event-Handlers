@@ -1,0 +1,41 @@
+/* Import Erick Meyer Reset  */
+@import 'plugins/reset.css';
+
+
+body {
+	background: #e5e5e5;
+	
+}
+h1 {
+	text-align: center;
+	font-size: 2em;
+	font-family: sans-serif;
+	margin: 1em 0;
+}
+section {
+	float: left;
+	width: 40%;
+	margin: 0 2.5%;
+}
+
+.boxWrapper, .removed {
+	overflow: hidden;
+	width: 100%;
+	margin: 5em auto;
+	
+	li {
+		cursor: pointer;
+		float: left;
+		width: 30%;
+		height: 10em;
+		background: #71b3ff;
+		margin:1%;
+	}
+	li:nth-of-type(2n+1) {
+		background: #ff4b4b;
+	}
+	a:after {
+		content: attr(class);
+		
+	}
+}
